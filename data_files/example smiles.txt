@@ -1,0 +1,10 @@
+CCO
+CCN(CC)C(=O)Nc1ccc(cc1)Br
+CC(C)C1=CC=CC=C1
+CCCCC
+O=C(C)Oc1ccccc1C(=O)O
+CC(=O)O
+CC(C)C(C(=O)O)N
+C1CCCC1
+C[C@H](N)C(O)=O
+C#N
