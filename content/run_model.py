@@ -49,22 +49,19 @@ def render():
     
 
     if st.button("Predict"):
-        if uploaded_file:
-            if smiles_input: 
-                try:
-                    df_predictions = predict.main(smiles_input)  # Predict using the user-provided SMILES
-                    st.write("Predicted Values:")
-                    st.write(df_predictions)
+        if smiles_input: 
+            try:
+                df_predictions = predict.main(smiles_input)  # Predict using the user-provided SMILES
+                st.write("Predicted Values:")
+                st.write(df_predictions)
 
-                    st.download_button("Download Predictions", df_predictions.to_csv(index=False), file_name="predictions.csv", mime="text/csv")
+                st.download_button("Download Predictions", df_predictions.to_csv(index=False), file_name="predictions.csv", mime="text/csv")
 
 
-                except Exception as e:
-                    st.error(f"Error occurred during prediction: {e}")
-            else:
-                st.warning("Please enter a valid SMILES string for prediction.")
+            except Exception as e:
+                st.error(f"Error occurred during prediction: {e}")
         else:
-            st.warning("Please upload a file for prediction.")
+            st.warning("Please enter a valid SMILES string for prediction.")
 
 if __name__ == "__main__":
     render()
