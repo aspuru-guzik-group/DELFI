@@ -29,7 +29,7 @@ def render():
 
         if uploaded_file is not None:
             try:
-                smiles_input = read_smiles_from_file(uploaded_file)  # Make the file content a list named smiles_input
+                smiles_input = read_smiles_from_file(uploaded_file)
                 df_uploaded_smiles = pd.DataFrame({"Uploaded SMILES": smiles_input})
                 st.write("Uploaded SMILES:")
                 st.dataframe(df_uploaded_smiles)

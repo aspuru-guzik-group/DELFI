@@ -79,9 +79,10 @@ def render(**kwargs):
     if columns:
         # Create sliders for numeric columns
         sliders = {}
+        st.sidebar.write("Filter")
         for column in columns:
             if pd.api.types.is_numeric_dtype(df[column]):
-                sliders[column] = st.slider(
+                sliders[column] = st.sidebar.slider(
                     f"Only display {column} results above:",
                     float(df[column].min()),
                     float(df[column].max()),
