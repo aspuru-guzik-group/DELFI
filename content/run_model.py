@@ -39,7 +39,7 @@ def render():
 
     elif user_choice == "Enter SMILES String":
         smiles_input = st.text_area("Enter SMILES String", placeholder="Enter Comma Separated SMILES String here...")
-        smiles_input = [smiles.strip() for smiles in smiles_input.split(",")]  # Convert to a list
+        smiles_input = [smiles.strip() for smiles in smiles_input.split(",")]
 
         df_uploaded_smiles = pd.DataFrame({"Uploaded SMILES": smiles_input})
         st.write("Uploaded SMILES:")
@@ -51,7 +51,7 @@ def render():
     if st.button("Predict"):
         if smiles_input: 
             try:
-                df_predictions = predict.main(smiles_input)  # Predict using the user-provided SMILES
+                df_predictions = predict.main(smiles_input) 
                 st.write("Predicted Values:")
                 st.write(df_predictions)
 
