@@ -58,8 +58,8 @@ def render():
                 st.download_button("Download Predictions", df_predictions.to_csv(index=False), file_name="predictions.csv", mime="text/csv")
 
 
-            except Exception as e:
-                st.error(f"Error occurred during prediction: {e}")
+            except:
+                st.error(f"Make sure that you have entered at least one valid SMILES string.")
         else:
             st.warning("Please enter a valid SMILES string for prediction.")
 

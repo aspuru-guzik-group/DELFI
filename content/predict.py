@@ -63,7 +63,7 @@ def collect_smiles(smiles_list):
         error_indices = [str(i).replace(',', '') for i in errors]
         df_merged = pd.DataFrame(error_indices, columns=["SMILE Error Row"])
         st.write("SMILE Errors:")
-        st.dataframe(df_merged)
+        st.dataframe(df_merged, hide_index=True)
     return smiles
 
 def featurize_smiles(smiles):
