@@ -19,10 +19,10 @@ def read_smiles_from_file(file):
     return smiles_list
 
 def render():
-    st.title("SMILES Converter to CSV")
+    st.title("Predict from single SMILES or CSV")
 
     # Add a dropdown for user choice
-    user_choice = st.selectbox("Choose an option:", ("File Upload", "Enter SMILES String"))
+    user_choice = st.selectbox("Choose an option:", ("Enter SMILES String","File Upload"))
 
     if user_choice == "File Upload":
         uploaded_file = st.file_uploader("Upload a file:", type=["txt", "csv"])
