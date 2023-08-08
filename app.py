@@ -7,15 +7,15 @@ def main():
     st.set_page_config(page_title="DELFI", page_icon=":rocket:")
 
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ("Scoring System", "Run DELFI on SMILES or CSV", "Score your own SMILES data", "Understand the Scoring System"))
+    page = st.sidebar.radio("Go to", ("Scoring System applied to QM8", "Run DELFI on SMILES or CSV", "Analysis of your scores", "Understand the Scoring System"))
 
-    if page == "Scoring System":
+    if page == "Scoring System applied to QM8":
         scoring_system.render(upload_csv=False)
 
     elif page == "Run DELFI on SMILES or CSV":  
         run_model.render()
 
-    elif page == "Score your own SMILES data":
+    elif page == "Analysis of your scores":
         scoring_system.render(upload_csv=True)
 
     elif page == "Understand the Scoring System":

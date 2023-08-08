@@ -17,7 +17,7 @@ dependent_visualisations = ["Histogram", "Heatmap"]
 
 
 def render(**kwargs):
-    st.title("Excited State functionals scoring system")
+    st.title("Excited State scoring system")
 
     # Initialize csv_path as None
     csv_path = None
