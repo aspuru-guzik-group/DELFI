@@ -4,7 +4,7 @@ import content.run_model as run_model
 import content.understand_scoring_system as understand_scoring_system
 
 def main():
-    st.set_page_config(page_title="DELFI", page_icon=":rocket:")
+    st.set_page_config(page_title="DELFI", page_icon=":dolphin:")
 
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ("Scoring System applied to QM8", "Run DELFI on SMILES or CSV", "Analysis of your scores", "Understand the Scoring System"))
