@@ -1,1 +1,16 @@
-
+cff-version: 1.2.0
+message: "If you use this DELFI, please cite it as below."
+authors:
+- family-names: "Davide"
+  given-names: "Avagliano"
+- family-names: "Sebastian"
+  given-names: "Arellano-Rubach"
+- family-names: "Marta"
+  given-names: "Skreta"
+- family-names: "Alan"
+  given-names: "Aspuru-Guzik"
+title: "DELFI Functional Recommender"
+version: 1.0.0
+doi: TBD
+date-released: TBD
+url: "https://delfi-functional-predictor.streamlit.app/"
